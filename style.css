@@ -1,0 +1,71 @@
+.job{
+    display: flex;
+}
+.joblogo img{
+    width:199px;
+}
+.home ul{
+    display: flex;
+    gap:30px;
+    list-style: none;
+    margin-left: 122px;
+    line-height: 47px;
+
+}
+.home li a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+}
+.login h2{
+    display: flex;
+    gap:60px;
+    margin-left: 225px;
+    line-height: 47px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: -32px;
+}
+.login i{
+    margin-left: 196px;
+    border-color: black;
+    margin-top:36px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+}
+.sign1{
+    background-color:#175ca7;
+    border-radius: 10px;
+    border-color: #175ca7;
+    width:100px;
+margin-bottom: 10px;
+margin-top: 15px;
+    margin-left:36px;
+    line-height: 37px;
+
+}
+.sign1 a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+}
+.home select{
+    margin-left: -29px;
+    border-color: #fff;
+}
+#sect1{
+    background-image: url('connect1.jpg');
+    background-size: cover;
+    width:100%;
+    background-repeat: no-repeat;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+

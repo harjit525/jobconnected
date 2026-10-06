@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobConnected Candidate Portal</title>
+
+    <link rel="stylesheet" href="candidates.css">
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+</body>
+<header>
+<div class="navbar">
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <img src="images/logoimage1.png" alt="Logo">
+
+    </div>
+
+    <!-- Menu -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="home.html" >Home</a></li>
+
+            <li>
+                <a href="findjob.html">
+                    Find Jobs
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+
+            <li><a href="employee.html">Employers</a></li>
+
+            <li><a href="candidates.html" class="active">Candidates</a></li>
+
+            <li><a href="company.html">Companies</a></li>
+
+            <li><a href="careertip.html">Career Tips</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Buttons -->
+<div class="nav-btn">
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+
+    <button class="register-btn" onclick="openRegister()">Register</button>
+
+</div>
+
+
+<!-- Login Popup -->
+<div class="popup" id="loginPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="loginAlert()">Login</button>
+
+    </div>
+
+</div>
+
+
+<!-- Register Popup -->
+<div class="popup" id="registerPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Enter Name">
+
+        <input type="email" id="registerEmail" placeholder="Enter Email">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="registerAlert()">Register</button>
+
+    </div>
+
+</div>
+
+</div>
+
+</header>
+<!-- ================= Candidate Header ================= -->
+<!-- Welcome Banner -->
+<section class="welcome-banner">
+    <div class="welcome-content">
+        <h5>Welcome back,</h5>
+        <h1>Rahul Sharma! 👋</h1>
+        <p>
+            Explore opportunities and take the next step
+            towards your dream career.
+        </p>
+    </div>
+
+    <div class="welcome-image">
+        <img src="images/background imagecandidate.png" alt="Candidate">
+    </div>
+</section>
+
+<!-- Statistics -->
+<section class="stats">
+
+    <div class="card">
+        <div class="icon blue">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="text">
+            <h2>12</h2>
+            <h4>Applications</h4>
+            <p>Total Applied</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon green">
+            <i class="fa-solid fa-bookmark"></i>
+        </div>
+        <div class="text">
+            <h2>5</h2>
+            <h4>Shortlisted</h4>
+            <p>You are a good fit!</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon purple">
+            <i class="fa-solid fa-calendar"></i>
+        </div>
+        <div class="text">
+            <h2>2</h2>
+            <h4>Interviews</h4>
+            <p>Upcoming</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon orange">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="text">
+            <h2>8</h2>
+            <h4>Saved Jobs</h4>
+            <p>Jobs you saved</p>
+        </div>
+    </div>
+
+</section>
+<section class="dashboard-grid">
+
+    <!-- My Applications -->
+    <div class="box applications">
+
+        <div class="box-header">
+            <h3>My Applications</h3>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="job-item">
+            <img src="images/tos.png" alt="">
+            <div class="job-info">
+                <h4>Web Developer</h4>
+                <p>Tata Consultancy Services</p>
+            </div>
+
+            <div class="job-status">
+                <span class="review">Under Review</span>
+                <small>Applied on 15 Jul, 2024</small>
+            </div>
+        </div>
+
+        <div class="job-item">
+            <img src="images/infosys.png" alt="">
+            <div class="job-info">
+                <h4>Software Engineer</h4>
+                <p>Infosys</p>
+            </div>
+
+            <div class="job-status">
+                <span class="shortlisted">Shortlisted</span>
+                <small>Applied on 12 Jul, 2024</small>
+            </div>
+        </div>
+
+        <div class="job-item">
+            <img src="images/wipro.png" alt="">
+            <div class="job-info">
+                <h4>Frontend Developer</h4>
+                <p>Wipro</p>
+            </div>
+
+            <div class="job-status">
+                <span class="applied">Applied</span>
+                <small>Applied on 10 Jul, 2024</small>
+            </div>
+        </div>
+
+        <a href="#" class="view-btn">View All Applications →</a>
+
+    </div>
+
+    <!-- Recommended Jobs -->
+
+    <div class="box recommended">
+
+        <div class="box-header">
+            <h3>Recommended Jobs</h3>
+            <a href="#">View All</a>
+        </div>
+
+        <div class="job-item">
+            <img src="images/4piece.png" alt="">
+            <div class="job-info">
+                <h4>UI/UX Designer</h4>
+                <p>Zoho Corporation</p>
+                <small>Chennai, India</small>
+            </div>
+        </div>
+
+        <div class="job-item">
+            <img src="images/hcl.png" alt="">
+            <div class="job-info">
+                <h4>Java Developer</h4>
+                <p>HCL Technologies</p>
+                <small>Noida, India</small>
+            </div>
+        </div>
+
+        <div class="job-item">
+            <img src="images/deloitte.png" alt="">
+            <div class="job-info">
+                <h4>Data Analyst</h4>
+                <p>Deloitte</p>
+                <small>Bengaluru, India</small>
+            </div>
+        </div>
+
+        <a href="#" class="view-btn">View All Jobs →</a>
+
+    </div>
+
+    <!-- Profile -->
+
+    <div class="box profile">
+
+        <h3>Profile Completion</h3>
+
+        <div class="circle">
+            <div class="inside">
+                <h2>75%</h2>
+                <span>Complete</span>
+            </div>
+        </div>
+
+        <p>
+            Complete your profile to get better job matches.
+        </p>
+
+        <button>Complete Profile</button>
+
+    </div>
+
+</section>
+<section class="profile-banner">
+
+    <div class="banner-text">
+        <h3>Make your profile visible to recruiters</h3>
+        <p>Increase your chances of getting noticed by top companies.</p>
+    </div>
+
+    <div class="banner-btn">
+        <a href="#">Make Profile Visible</a>
+    </div>
+
+    <div class="banner-image">
+        <img src="images/rightcandidates.png" alt="Profile">
+    </div>
+
+</section>
+<section class="login-page">
+
+    <div class="login-logo">
+        <img src="candidate job.png" alt="Job Connect">
+    </div>
+
+    <h1>Candidate Portal</h1>
+
+    <form class="login-form" onsubmit="candidateLogin(event)">
+
+        <label>Email Address:</label>
+        <input 
+            type="email" 
+            id="candidateEmail"
+            placeholder="Email Address..."
+        >
+
+        <label>Password:</label>
+        <input 
+            type="password" 
+            id="candidatePassword"
+            placeholder="Password..."
+        >
+
+        <a href="#" class="forgot" onclick="forgotPassword(event)">
+            Forgot Password
+        </a>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</section>
+
+</body>
+<script>
+
+function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+}
+
+function openRegister() {
+    document.getElementById("registerPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("loginPopup").style.display = "none";
+    document.getElementById("registerPopup").style.display = "none";
+}
+
+
+// Login Alert
+function loginAlert() {
+
+    let email = document.getElementById("loginEmail").value;
+    let password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter Email and Password!");
+    } 
+    else {
+        alert("Login Successfully!");
+        closePopup();
+    }
+}
+
+
+// Register Alert
+function registerAlert() {
+
+    let name = document.getElementById("registerName").value;
+    let email = document.getElementById("registerEmail").value;
+    let password = document.getElementById("registerPassword").value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill all the fields!");
+    } 
+    else {
+        alert("Registration Successfully!");
+        closePopup();
+    }
+}
+
+</script>
+<script>
+
+function candidateLogin(event) {
+
+    event.preventDefault();
+
+    let email = document.getElementById("candidateEmail").value;
+    let password = document.getElementById("candidatePassword").value;
+
+    if (email === "" || password === "") {
+
+        alert("Please enter Email Address and Password!");
+
+    } 
+    else {
+
+        alert("Candidate Login Successfully!");
+
+    }
+}
+
+
+function forgotPassword(event) {
+
+    event.preventDefault();
+
+    alert("Password reset link will be sent to your registered email.");
+
+}
+
+</script>
+</html>

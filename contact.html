@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+
+<div class="navbar">
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <img src="images/logoimage1.png" alt="Logo">
+
+    </div>
+
+    <!-- Menu -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="home.html" >Home</a></li>
+
+            <li>
+                <a href="findjob.html">
+                    Find Jobs
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+
+            <li><a href="employee.html">Employers</a></li>
+
+            <li><a href="candidates.html">Candidates</a></li>
+
+            <li><a href="company.html">Companies</a></li>
+
+            <li><a href="careertip.html">Career Tips</a></li>
+
+            <li><a href="contact.html" class="active">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Buttons -->
+
+    <div class="nav-btn">
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+
+    <button class="register-btn" onclick="openRegister()">Register</button>
+
+</div>
+
+
+<!-- Login Popup -->
+<div class="popup" id="loginPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="loginAlert()">Login</button>
+
+    </div>
+
+</div>
+
+
+<!-- Register Popup -->
+<div class="popup" id="registerPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Enter Name">
+
+        <input type="email" id="registerEmail" placeholder="Enter Email">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="registerAlert()">Register</button>
+
+    </div>
+
+</div>
+
+</div>
+
+</header>
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-area">
+
+    <!-- Background Shapes -->
+
+    <div class="shape circle1"></div>
+    <div class="shape circle2"></div>
+
+
+    <div class="contact-container">
+
+
+        <!-- Left Contact Form -->
+
+        <div class="contact-form">
+
+            <h1>Contact Us</h1>
+
+
+            <form onsubmit="sendMessage(event)">
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input 
+                        type="text" 
+                        id="contactName"
+                        placeholder="Your Name"
+                    >
+
+                </div>
+
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input 
+                        type="email" 
+                        id="contactEmail"
+                        placeholder="Your Email"
+                    >
+
+                </div>
+
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <input 
+                        type="text" 
+                        id="contactPhone"
+                        placeholder="Your Phone"
+                    >
+
+                </div>
+
+
+
+                <div class="input-box message">
+
+                    <i class="fa-solid fa-message"></i>
+
+                    <textarea 
+                        id="contactMessage"
+                        placeholder="Your Message"
+                    ></textarea>
+
+                </div>
+
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- Right Illustration -->
+
+        <div class="contact-image">
+
+            <img src="images/contact.png" alt="Contact">
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <!-- Column 1 -->
+
+        <div class="footer-box">
+
+            <h2>JobConnect</h2>
+
+            <div class="line"></div>
+
+            <p>
+                Your trusted platform for finding the perfect
+                job match. Connect with top employers
+                and discover opportunities that match your
+                skills and experience.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Column 2 -->
+
+        <div class="footer-box">
+
+            <h2>For Job Seekers</h2>
+
+            <div class="line"></div>
+
+            <ul>
+
+                <li>Browse Jobs</li>
+
+                <li>Create Account</li>
+
+                <li>Job Seeker Profile</li>
+
+                <li>Saved Jobs</li>
+
+                <li>Job Alerts</li>
+
+            </ul>
+
+        </div>
+
+
+
+
+        <!-- Column 3 -->
+
+        <div class="footer-box">
+
+            <h2>For Employers</h2>
+
+            <div class="line"></div>
+
+            <ul>
+
+                <li>Register Company</li>
+
+                <li>Post a Job</li>
+
+                <li>Manage Jobs</li>
+
+                <li>Browse Applications</li>
+
+                <li>Pricing Plans</li>
+
+            </ul>
+
+        </div>
+
+
+
+
+        <!-- Column 4 -->
+
+        <div class="footer-box">
+
+            <h2>Quick Links</h2>
+
+            <div class="line"></div>
+
+            <ul>
+
+                <li>About Us</li>
+
+                <li>Contact Us</li>
+
+                <li>Privacy Policy</li>
+
+                <li>Terms & Conditions</li>
+
+                <li>FAQs</li>
+
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- Font Awesome -->
+
+
+</body>
+<script>
+
+function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+}
+
+function openRegister() {
+    document.getElementById("registerPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("loginPopup").style.display = "none";
+    document.getElementById("registerPopup").style.display = "none";
+}
+
+
+// Login Alert
+function loginAlert() {
+
+    let email = document.getElementById("loginEmail").value;
+    let password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter Email and Password!");
+    } 
+    else {
+        alert("Login Successfully!");
+        closePopup();
+    }
+}
+
+
+// Register Alert
+function registerAlert() {
+
+    let name = document.getElementById("registerName").value;
+    let email = document.getElementById("registerEmail").value;
+    let password = document.getElementById("registerPassword").value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill all the fields!");
+    } 
+    else {
+        alert("Registration Successfully!");
+        closePopup();
+    }
+}
+
+</script>
+<script>
+
+function sendMessage(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("contactName").value;
+    let email = document.getElementById("contactEmail").value;
+    let phone = document.getElementById("contactPhone").value;
+    let message = document.getElementById("contactMessage").value;
+
+
+    if (name === "" || email === "" || phone === "" || message === "") {
+
+        alert("Please fill all the fields!");
+
+    } 
+    else {
+
+        alert("Your message has been sent successfully!");
+
+        document.querySelector(".contact-form form").reset();
+
+    }
+
+}
+
+</script>
+</html>

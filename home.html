@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnected</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/2.0.0/slick-theme.min.css" integrity="sha512-x8N2Tx+THLEVqSgflGruALuSVFhlu5BkwKHhjEnjmJk9q3qraPmV3uXWnY8oisXkJuVCASJlRPFN13P4fAFphQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<!-- ================= NAVBAR ================= -->
+
+<header >
+
+        <!-- Logo -->
+
+        <div class="career-logo">
+
+            <img src="images/logoimage1.png" alt="CareerNest Logo">
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="career-navbar">
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li class="dropdown">
+
+                    <a href="findjob.html">
+                        Find Jobs
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                </li>
+
+                <li><a href="employee.html">Employers</a></li>
+
+                <li><a href="candidates.html">Candidates</a></li>
+
+                <li><a href="company.html">Companies</a></li>
+
+                <li><a href="careertip.html">Career Tips</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Buttons -->
+
+       <div class="career-btn">
+
+    <a href="#" class="login-btn" onclick="openLogin()">Login</a>
+
+    <a href="#" class="register-btn" onclick="openRegister()">Register</a>
+
+</div>
+
+
+<!-- Login Popup -->
+<div class="popup" id="loginPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <button onclick="loginAlert()">Login</button>
+
+    </div>
+
+</div>
+
+
+<!-- Register Popup -->
+<div class="popup" id="registerPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Enter Name">
+
+        <input type="email" id="registerEmail" placeholder="Enter Email">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <button onclick="registerAlert()">Register</button>
+
+    </div>
+
+</div>
+
+    </header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="left">
+
+        <h1>
+            Find Your <br>
+            Dream Job with <br>
+            <span>JobConnected</span>
+        </h1>
+
+        <p>
+
+            Explore thousands of verified job opportunities,
+            connect with top employers and build your
+            career with confidence.
+
+        </p>
+
+        <div class="hero-btn">
+
+            <button class="find">
+
+                <i class="bi bi-search"></i>
+
+                Find Jobs
+
+            </button>
+
+            <button class="post">
+
+                <i class="bi bi-briefcase-fill"></i>
+
+                Post a Job
+
+            </button>
+
+        </div>
+
+        <!-- Feature Icons -->
+
+        <div class="features">
+
+            <div class="box">
+
+                <div class="icon blue1">
+
+                    <i class="bi bi-briefcase-fill"></i>
+
+                </div>
+
+                <h4>Thousands of <br> Job Opportunities</h4>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon green">
+
+                    <i class="bi bi-people-fill"></i>
+
+                </div>
+
+                <h4>Connect with <br> Top Employers</h4>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon purple1">
+
+                    <i class="bi bi-file-earmark-text-fill"></i>
+
+                </div>
+
+                <h4>Build & Upload <br> Resume</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+
+    <div class="right">
+
+        <img src="images/rightimage.png" alt="">
+
+    </div>
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats animate__animated animate__heartBeat">
+
+    <div class="card">
+
+        <i class="bi bi-people-fill"></i>
+
+        <h2>10,000+</h2>
+
+        <p>Active Jobs</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="bi bi-building"></i>
+
+        <h2>5,000+</h2>
+
+        <p>Companies</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="bi bi-person-workspace"></i>
+
+        <h2>50,000+</h2>
+
+        <p>Job Seekers</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="bi bi-briefcase-fill"></i>
+
+        <h2>25,000+</h2>
+
+        <p>Successful Hires</p>
+
+    </div>
+
+</section>
+<section class="skills">
+
+    <h1>Top Freelancers Like You Are in High Demand</h1>
+
+    <p>
+        Toptal connects freelancers with thousands of global clients for their
+        remote freelance jobs.
+    </p>
+
+    <p>
+        These are the skills most in demand right now.
+    </p>
+
+    <div class="skill-box responsive">
+
+        <div class="card">
+            <div class="circle">
+                <img src="images/logo1.png">
+
+            </div>
+            <h3>Artificial Intelligence</h3>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <img src="logo2.svg">
+
+            </div>
+            <h3>Kotlin</h3>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <img src="images/logo3.avif">
+            </div>
+            <h3>React.js</h3>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <img src="images/logo4.avif">
+
+            </div>
+            <h3>Python</h3>
+        </div>
+
+        <div class="card">
+            <div class="circle">
+                <img src="images/logo5.avif">
+            </div>
+            <h3>JavaScript</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="talent">
+
+    <div class="left-content">
+        <h1>World-Class Talent</h1>
+
+        <p>
+            When you're good at what you do, it's worth it to
+            find others at your level. At Toptal, we represent
+            the top 3% of freelance talent in business,
+            design, and technology.
+        </p>
+    </div>
+
+    <div class="box2">
+        <i class="fa-solid fa-code"></i>
+
+        <h2>Developers</h2>
+        <p>We connect full-stack engineers, DevOps experts and software developers.</p>
+    </div>
+
+    <div class="box2">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h2>Designers</h2>
+        <p>Join expert UX, UI, interaction and graphic designers.</p>
+    </div>
+
+    <div class="box2">
+        <i class="fa-solid fa-chart-simple"></i>
+        <h2>Management Consultants</h2>
+        <p>Seasoned financial analysts and strategic consultants.</p>
+    </div>
+
+    <div class="box2">
+        <i class="fa-solid fa-clipboard-check"></i>
+        <h2>Project Managers</h2>
+        <p>Digital and technical project managers with agile experience.</p>
+    </div>
+
+    <div class="box2">
+        <i class="fa-solid fa-users"></i>
+        <h2>Product Managers</h2>
+        <p>Digital PMs and scrum product owners build products.</p>
+    </div>
+
+</section>
+<section class="job-home">
+
+    <div class="job-left">
+
+        <span class="job-tag">🤝 #BeUnstoppable</span>
+
+        <h1>Job Portal in India</h1>
+
+        <p>
+            Apply to 77,000+ Verified Job Openings for Freshers &
+            Experienced Professionals
+        </p>
+
+        <div class="job-category">
+
+            <div class="job-card blue">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <h4>Content Writing</h4>
+            </div>
+
+            <div class="job-card purple">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h4>Digital Marketing</h4>
+            </div>
+
+            <div class="job-card yellow">
+                <i class="fa-solid fa-atom"></i>
+                <h4>Data Science</h4>
+            </div>
+
+            <div class="job-card peach">
+                <i class="fa-solid fa-calculator"></i>
+                <h4>Accounting</h4>
+            </div>
+
+            <div class="job-card blue">
+                <i class="fa-solid fa-database"></i>
+                <h4>Backend Developer</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="job-right">
+        <img src="images/job.png" alt="">
+    </div>
+
+</section>
+<section class="jobs-section">
+
+    <div class="job-heading">
+        <div>
+            <h2>Jobs</h2>
+            <p>Unveil jobs designed for your next big move.</p>
+        </div>
+
+        <a href="#" class="view-btn">View All ➜</a>
+    </div>
+
+    <div class="job-cards">
+
+        <!-- Card 1 -->
+        <div class="job-box">
+
+            <div class="job-top">
+                <span>📍 In Office | Bangalore , Chennai</span>
+
+                <img src="images/job1.webp" alt="">
+            </div>
+
+            <div class="job-content">
+                <h3>Analyst Identity Access Management</h3>
+                <p>SitusAmc India Pvt Ltd</p>
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="job-box">
+
+            <div class="job-top">
+                <span>📍 In Office | Gurgaon</span>
+
+                <img src="images/job2.webp" alt="">
+            </div>
+
+            <div class="job-content">
+                <h3>Human Resources Analyst</h3>
+                <p>Wipro Limited</p>
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="job-box">
+
+            <div class="job-top">
+                <span>📍 In Office | Mumbai</span>
+
+                <img src="images/job3.webp" alt="">
+            </div>
+
+            <div class="job-content">
+                <h3>Business Development Manager</h3>
+                <p>HCL Technologies</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================== JOB DESCRIPTION SECTION ===================== -->
+
+<section class="india-job-info">
+
+    <div class="india-job-container">
+
+        <h2 class="india-job-heading">
+            Jobs in India
+        </h2>
+
+        <p class="india-job-text">
+            With the myriad of job search portals in India, seeking professional
+            employment can be overwhelming.
+        </p>
+
+        <p class="india-job-text">
+            We work with established companies and promising start-ups to bring
+            professional job vacancies to you. Monitor our job listings to ensure
+            you do not miss out on the latest job vacancies in India, while
+            gaining valuable insights into the hard and soft skills currently
+            required to advance in your chosen field.
+        </p>
+
+        <p class="india-job-text">
+            We also encourage you to search beyond your traditional career
+            background for new job opportunities as many employers are starting
+            to look for candidates that are from a more diverse background who
+            are able to make a difference to their team.
+        </p>
+
+        <p class="india-job-text">
+            Every hour, we change the lives of professionals globally — make
+            sure that when the right job vacancy in India opens up, you are
+            shortlisted by our specialist recruitment consultants as a top
+            candidate.
+        </p>
+
+    </div>
+
+</section>
+<!-- ================= LOCATION & INDUSTRY ================= -->
+
+<section class="explore-section">
+
+    <!-- Jobs By Location -->
+
+    <div class="explore-block">
+
+        <div class="explore-heading">
+
+            <div class="explore-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <h2>Jobs by Location</h2>
+
+        </div>
+
+        <div class="explore-list">
+
+            <ul>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Kolkata</a></li>
+                <li><a href="#">Chennai</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Pune</a></li>
+                <li><a href="#">Bangalore</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Delhi</a></li>
+                <li><a href="#">Hyderabad</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Jobs By Industry -->
+
+    <div class="explore-block">
+
+        <div class="explore-heading">
+
+            <div class="explore-icon">
+                <i class="fa-solid fa-industry"></i>
+            </div>
+
+            <h2>Jobs by Industry</h2>
+
+        </div>
+
+        <div class="explore-list">
+
+            <ul>
+
+                <li><a href="#">Business Services Jobs</a></li>
+                <li><a href="#">Energy & Natural Resources Jobs</a></li>
+                <li><a href="#">FMCG Jobs</a></li>
+                <li><a href="#">Financial Services Jobs</a></li>
+                <li><a href="#">Healthcare Jobs</a></li>
+                <li><a href="#">Healthcare Providers Jobs</a></li>
+
+            </ul>
+
+            <ul>
+
+                <li><a href="#">Industrial / Manufacturing Jobs</a></li>
+                <li><a href="#">Insurance Jobs</a></li>
+                <li><a href="#">Leisure & Tourism Jobs</a></li>
+                <li><a href="#">Life Sciences Jobs</a></li>
+                <li><a href="#">Media & Agency Jobs</a></li>
+                <li><a href="#">Medical Equipment Jobs</a></li>
+
+            </ul>
+
+            <ul>
+
+                <li><a href="#">Not For Profit Jobs</a></li>
+                <li><a href="#">Property & Construction Jobs</a></li>
+                <li><a href="#">Public Sector Jobs</a></li>
+                <li><a href="#">Retail Jobs</a></li>
+                <li><a href="#">Technology Jobs</a></li>
+                <li><a href="#">Transport Jobs</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= JOB FUNCTION SECTION ================= -->
+
+<section class="function-area">
+
+    <div class="function-head">
+
+        <div class="function-icon">
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+        <h2>Jobs by Function</h2>
+
+    </div>
+
+    <div class="function-grid">
+
+        <ul>
+            <li><a href="#">Analytics jobs</a></li>
+            <li><a href="#">Banking & Financial Services jobs</a></li>
+            <li><a href="#">Consultancy, Strategy & Change jobs</a></li>
+            <li><a href="#">Engineering & Manufacturing jobs</a></li>
+            <li><a href="#">Finance & Accounting jobs</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Healthcare & Life Sciences jobs</a></li>
+            <li><a href="#">Human Resources jobs</a></li>
+            <li><a href="#">Information Technology jobs</a></li>
+            <li><a href="#">Insurance jobs</a></li>
+            <li><a href="#">Legal jobs</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">Marketing jobs</a></li>
+            <li><a href="#">Procurement & Supply Chain jobs</a></li>
+            <li><a href="#">Property jobs</a></li>
+            <li><a href="#">Retail jobs</a></li>
+            <li><a href="#">Sales jobs</a></li>
+        </ul>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="jc-footer">
+
+    <div class="jc-footer-container">
+
+        <!-- General -->
+
+        <div class="jc-footer-box">
+
+            <h3>General</h3>
+
+            <ul>
+                <li><a href="#">Page Executive</a></li>
+                <li><a href="#">Page Outsourcing</a></li>
+                <li><a href="#">PageGroup Corporate Site</a></li>
+                <li><a href="#">Investor Site</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Email Disclaimer</a></li>
+                <li><a href="#">Company Compliance</a></li>
+                <li><a href="#">Advisory on Job Scams</a></li>
+                <li><a href="#">Web Accessibility Statement</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Site Terms</a></li>
+                <li><a href="#">Change Country/Region</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Jobs -->
+
+        <div class="jc-footer-box">
+
+            <h3>Jobs by Function</h3>
+
+            <div class="jc-footer-links">
+
+                <ul>
+
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Banking & Financial Services</a></li>
+                    <li><a href="#">Consultancy, Strategy & Change</a></li>
+                    <li><a href="#">Engineering & Manufacturing</a></li>
+                    <li><a href="#">Finance & Accounting</a></li>
+                    <li><a href="#">Healthcare & Life Sciences</a></li>
+                    <li><a href="#">Human Resources</a></li>
+                    <li><a href="#">Information Technology</a></li>
+
+                </ul>
+
+                <ul>
+
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Procurement & Supply Chain</a></li>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">Retail</a></li>
+                    <li><a href="#">Sales</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="jc-footer-box">
+
+            <h3>Contact</h3>
+
+            <ul>
+
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Looking to Hire?</a></li>
+                <li><a href="#">Submit your CV</a></li>
+
+            </ul>
+
+            <div class="jc-rating">
+
+                <img src="images/images.jpg" alt="Google Rating">
+
+            </div>
+
+            <h3 class="office-title">Our Offices</h3>
+
+            <ul>
+
+                <li><a href="#">Gurgaon</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Bangalore</a></li>
+
+            </ul>
+
+            <h3 class="office-title">Accreditations</h3>
+
+            <img src="images/accre1.jpg" alt="Accreditation">
+
+        </div>
+
+    </div>
+
+    <!-- Social Icons -->
+
+    <div class="jc-social">
+
+        <a href="#"><i class="fa-brands fa-rocketchat"></i></a>
+
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+    </div>
+
+</footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  autoplay:true,
+  autoplayspeed:2000,
+  speed:1000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+				
+</script>
+<script>
+
+function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+}
+
+function openRegister() {
+    document.getElementById("registerPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("loginPopup").style.display = "none";
+    document.getElementById("registerPopup").style.display = "none";
+}
+
+function loginAlert() {
+
+    let email = document.getElementById("loginEmail").value;
+    let password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter Email and Password!");
+    } else {
+        alert("Login Successfully!");
+        closePopup();
+    }
+}
+
+function registerAlert() {
+
+    let name = document.getElementById("registerName").value;
+    let email = document.getElementById("registerEmail").value;
+    let password = document.getElementById("registerPassword").value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill all the fields!");
+    } else {
+        alert("Registration Successfully!");
+        closePopup();
+    }
+}
+
+</script>
+</html>

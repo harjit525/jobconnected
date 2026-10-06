@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>career Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="career.css">
+</head>
+<body>
+
+<header>
+
+<div class="navbar">
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <img src="images/logoimage1.png" alt="Logo">
+
+    </div>
+
+    <!-- Menu -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="home.html" >Home</a></li>
+
+            <li>
+                <a href="findjob.html">
+                    Find Jobs
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+
+            <li><a href="employee.html">Employers</a></li>
+
+            <li><a href="candidates.html">Candidates</a></li>
+
+            <li><a href="company.html">Companies</a></li>
+
+            <li><a href="careertip.html" class="active">Career Tips</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Buttons -->
+
+    <div class="nav-btn">
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+
+    <button class="register-btn" onclick="openRegister()">Register</button>
+
+</div>
+
+
+<!-- Login Popup -->
+<div class="popup" id="loginPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="loginAlert()">Login</button>
+
+    </div>
+
+</div>
+
+
+<!-- Register Popup -->
+<div class="popup" id="registerPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Enter Name">
+
+        <input type="email" id="registerEmail" placeholder="Enter Email">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="registerAlert()">Register</button>
+
+    </div>
+
+</div>
+
+</div>
+
+</header>
+<!-- Career Tips Hero Section -->
+
+<section class="career-hero">
+
+    <div class="career-left">
+
+        <span class="tag">CAREER TIPS</span>
+
+        <h1>
+            Build Skills. Grow Career.
+            <br>
+            Succeed in Life.
+        </h1>
+
+        <p>
+            Explore expert advice, career strategies, and industry insights to
+            help you advance your career and achieve your goals.
+        </p>
+
+        <div class="search-box">
+
+            <input type="text"
+            placeholder="Search career tips...">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="career-right">
+
+        <img src="images/rightcareer123.png" alt="Career Tips">
+
+    </div>
+
+</section>
+<!-- ===========================
+     Statistics Section
+============================ -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+
+        <div class="stat-icon blue">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+
+        <div class="stat-info">
+            <h2>25K+</h2>
+            <h4>Jobs Posted</h4>
+            <p>New opportunities every day</p>
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon green">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div class="stat-info">
+            <h2>18K+</h2>
+            <h4>Companies</h4>
+            <p>Trusted by leading companies</p>
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon yellow">
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+        <div class="stat-info">
+            <h2>50K+</h2>
+            <h4>Happy Candidates</h4>
+            <p>Successfully placed</p>
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon purple">
+            <i class="fa-solid fa-award"></i>
+        </div>
+
+        <div class="stat-info">
+            <h2>5+</h2>
+            <h4>Years of Excellence</h4>
+            <p>Delivering quality solutions</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+      Mission & Vision
+============================ -->
+
+<section class="mission-section">
+
+    <div class="mission-card">
+
+        <div class="mission-icon">
+            <i class="fa-solid fa-bullseye"></i>
+        </div>
+
+        <div class="mission-content">
+
+            <h3>Our Mission</h3>
+
+            <p>
+                To empower individuals to find the right career
+                opportunities and help organizations build
+                exceptional teams.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="mission-card">
+
+        <div class="mission-icon">
+
+            <i class="fa-regular fa-eye"></i>
+
+        </div>
+
+        <div class="mission-content">
+
+            <h3>Our Vision</h3>
+
+            <p>
+                To be the most trusted recruitment platform,
+                known for transparency, innovation and
+                excellence.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= WHY JOBCONNECT ================= -->
+
+<section class="why-jobconnect">
+
+    <h2>Why JobConnect?</h2>
+
+    <div class="why-container">
+
+        <!-- Card 1 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div class="why-content">
+                <h4>Trusted Platform</h4>
+                <p>Secure and reliable recruitment process</p>
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <div class="why-content">
+                <h4>Fast & Easy</h4>
+                <p>Quick job search and application process</p>
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="why-content">
+                <h4>Personalized</h4>
+                <p>Recommendations that match your skills</p>
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card">
+
+            <div class="why-icon">
+                <i class="fa-solid fa-handshake"></i>
+            </div>
+
+            <div class="why-content">
+                <h4>Strong Network</h4>
+                <p>Connect with top companies easily</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================
+      Internal Career Section
+========================== -->
+
+<section class="career-section">
+
+    <!-- Left Content -->
+
+    <div class="career-left">
+
+        <h1>
+            Internal Careers at
+            <br>
+            Randstad.
+        </h1>
+
+        <p>
+            Are you interested in an internal career at Randstad?
+            Benefit from the opportunities that Randstad offers as
+            an employer - regardless of where you are in your
+            professional life.
+        </p>
+
+        <a href="#" class="career-btn">
+            To the Job Portal
+        </a>
+
+    </div>
+
+    <!-- Right Image -->
+
+    <div class="career-right">
+
+        <img src="images/RM_588-tech12.webp" alt="Internal Career">
+
+    </div>
+
+</section>
+<!-- ================= Contact Section ================= -->
+
+<section class="contact-section">
+
+    <div class="contact-content">
+
+        <div class="contact-text">
+
+            <h1>let's get in touch.</h1>
+
+            <h2>
+                search our jobs or speak to a
+                consultant to kick start your job
+                search.
+            </h2>
+
+        </div>
+
+        <div class="contact-btn">
+
+            <a href="#" class="btn-contact">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Feedback Button -->
+
+    <div class="feedback-btn">
+        Feedback
+    </div>
+
+</section>
+</body>
+
+</html>

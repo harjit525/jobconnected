@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerNest</title>
+
+    <link rel="stylesheet" href="findjob.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="career-header">
+
+        <!-- Logo -->
+
+        <div class="career-logo">
+
+            <img src="images/logoimage1.png" alt="CareerNest Logo">
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="career-navbar">
+
+            <ul>
+
+                <li><a href="home.html">Home</a></li>
+
+                <li class="dropdown">
+
+                    <a href="findjob.html" class="job12">
+                        Find Jobs
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                </li>
+
+                <li><a href="employee.html">Employers</a></li>
+
+                <li><a href="candidates.html">Candidates</a></li>
+
+                <li><a href="company.html">Companies</a></li>
+
+                <li><a href="careertip.html">Career Tips</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Buttons -->
+
+       <div class="career-btn">
+
+    <a href="#" class="login-btn" onclick="openLogin()">Login</a>
+
+    <a href="#" class="register-btn" onclick="openRegister()">Register</a>
+
+</div>
+
+
+<!-- Login Popup -->
+<div class="popup" id="loginPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <button onclick="loginAlert()">Login</button>
+
+    </div>
+
+</div>
+
+
+<!-- Register Popup -->
+<div class="popup" id="registerPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Enter Name">
+
+        <input type="email" id="registerEmail" placeholder="Enter Email">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <button onclick="registerAlert()">Register</button>
+
+    </div>
+
+</div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+<!-- ================= HERO SECTION START ================= -->
+
+<section class="findjob-hero">
+
+    <div class="findjob-container">
+
+        <div class="findjob-left">
+
+            <h1>Find Jobs</h1>
+
+            <p>
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                Find Jobs
+            </p>
+
+        </div>
+
+        <div class="findjob-right">
+
+            <img src="images/rightjob.png" alt="Find Jobs">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH BOX ================= -->
+
+<section class="job-search-area">
+
+    <div class="job-search-box">
+
+        <!-- Job Title -->
+        <div class="search-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="jobTitle"
+                   placeholder="Job title, keywords or company">
+        </div>
+
+        <!-- Location -->
+        <div class="search-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="location"
+                   placeholder="Enter location">
+        </div>
+
+        <!-- Category -->
+        <div class="search-item">
+            <select id="category">
+                <option>Select Category</option>
+                <option>Software Developer</option>
+                <option>UI / UX Designer</option>
+                <option>Marketing</option>
+                <option>Finance</option>
+                <option>Data Science</option>
+            </select>
+        </div>
+
+        <!-- Experience -->
+        <div class="search-item">
+            <select id="experience">
+                <option>Experience</option>
+                <option>Fresher</option>
+                <option>1-2 Years</option>
+                <option>3-5 Years</option>
+                <option>5+ Years</option>
+            </select>
+        </div>
+
+        <!-- Button -->
+        <button class="search-job-btn" onclick="searchJobs()">
+            Search Jobs
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= HERO SECTION END ================= -->
+<!-- ================= Explore Jobs Section ================= -->
+
+<section class="career-explore-section">
+
+    <div class="career-layout">
+
+        <!-- Left Sidebar -->
+
+        <aside class="career-sidebar">
+
+            <h3>Browse Jobs</h3>
+
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Browse All Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock"></i> Latest Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i> Featured Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-house-laptop"></i> Remote Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-business-time"></i> Full-Time Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-hourglass-half"></i> Part-Time Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-graduate"></i> Fresher Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-laptop-code"></i> Internship Jobs</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Jobs by Location</a></li>
+                <li><a href="#"><i class="fa-solid fa-building"></i> Jobs by Company</a></li>
+                <li><a href="#"><i class="fa-solid fa-layer-group"></i> Jobs by Category</a></li>
+                <li><a href="#"><i class="fa-solid fa-indian-rupee-sign"></i> Salary Based Jobs</a></li>
+            </ul>
+
+        </aside>
+
+        <!-- Right Section -->
+
+        <div class="career-category-area">
+
+            <h2>Explore Jobs by Category</h2>
+
+            <div class="career-category-grid">
+
+                <div class="career-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>IT & Software</h4>
+                    <p>12,450 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h4>Marketing</h4>
+                    <p>8,730 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>Finance</h4>
+                    <p>6,250 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Human Resources</h4>
+                    <p>4,120 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h4>Sales</h4>
+                    <p>7,980 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-palette"></i>
+                    <h4>Design</h4>
+                    <p>3,560 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h4>Healthcare</h4>
+                    <p>5,781 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>Data Science</h4>
+                    <p>3,940 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h4>Engineering</h4>
+                    <p>9,210 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h4>Education</h4>
+                    <p>2,860 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h4>Legal</h4>
+                    <p>1,620 Jobs</p>
+                </div>
+
+                <div class="career-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h4>Customer Support</h4>
+                    <p>2,980 Jobs</p>
+                </div>
+
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="career-stats-row">
+
+                <div class="career-stat-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>75,000+</h3>
+                    <span>Active Jobs</span>
+                </div>
+
+                <div class="career-stat-box">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>15,000+</h3>
+                    <span>Companies</span>
+                </div>
+
+                <div class="career-stat-box">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h3>1M+</h3>
+                    <span>Job Seekers</span>
+                </div>
+
+                <div class="career-stat-box">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>30,000+</h3>
+                    <span>Successful Hires</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================== JOB ALERT SECTION ===================== -->
+
+<section class="cn-job-alert-section">
+
+    <div class="cn-upload-card">
+
+        <h3>Can't find the right job?</h3>
+
+        <p>
+            Get personalized job recommendations.
+        </p>
+
+        <a href="#" class="cn-upload-btn">
+            Upload Resume
+        </a>
+
+    </div>
+
+    <div class="cn-right-area">
+
+        <h2>Popular Job Searches</h2>
+
+        <div class="cn-search-tags">
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Software Developer</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Frontend Developer</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Backend Developer</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Web Developer</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Data Analyst</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Digital Marketing</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Graphic Designer</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> HR Manager</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Sales Executive</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Business Analyst</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> DevOps Engineer</a>
+
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> UI/UX Designer</a>
+
+        </div>
+
+        <div class="cn-subscribe-box">
+
+            <div class="cn-subscribe-text">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div>
+
+                    <h3>Get Job Alerts Straight to Your Inbox!</h3>
+
+                    <p>Subscribe and never miss an opportunity.</p>
+
+                </div>
+
+            </div>
+
+            <div class="cn-email-box">
+
+                <input type="email" placeholder="Enter your email">
+
+                <button>Subscribe</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+<script>
+
+function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+}
+
+function openRegister() {
+    document.getElementById("registerPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("loginPopup").style.display = "none";
+    document.getElementById("registerPopup").style.display = "none";
+}
+
+function loginAlert() {
+
+    let email = document.getElementById("loginEmail").value;
+    let password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter Email and Password!");
+    } else {
+        alert("Login Successfully!");
+        closePopup();
+    }
+}
+
+function registerAlert() {
+
+    let name = document.getElementById("registerName").value;
+    let email = document.getElementById("registerEmail").value;
+    let password = document.getElementById("registerPassword").value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill all the fields!");
+    } else {
+        alert("Registration Successfully!");
+        closePopup();
+    }
+}
+
+</script>
+<script>
+
+function searchJobs() {
+
+    let jobTitle = document.getElementById("jobTitle").value;
+    let location = document.getElementById("location").value;
+    let category = document.getElementById("category").value;
+    let experience = document.getElementById("experience").value;
+
+    if (jobTitle === "" && location === "" &&
+        category === "Select Category" &&
+        experience === "Experience") {
+
+        alert("Please enter your job search details!");
+
+    } else {
+
+        alert("Searching for jobs...");
+
+    }
+}
+
+</script>
+</html>

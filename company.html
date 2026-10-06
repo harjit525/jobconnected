@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="company.css">
+</head>
+
+<body>
+   <div class="navbar">
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <img src="images/logoimage1.png" alt="Logo">
+
+    </div>
+
+    <!-- Menu -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="home.html" >Home</a></li>
+
+            <li>
+                <a href="findjob.html">
+                    Find Jobs
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+
+            <li><a href="employee.html">Employers</a></li>
+
+            <li><a href="candidates.html">Candidates</a></li>
+
+            <li><a href="company.html" class="active">Companies</a></li>
+
+            <li><a href="careertip.html">Career Tips</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Buttons -->
+
+  <div class="nav-btn">
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+
+    <button class="register-btn" onclick="openRegister()">Register</button>
+
+</div>
+
+
+<!-- Login Popup -->
+<div class="popup" id="loginPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="loginAlert()">Login</button>
+
+    </div>
+
+</div>
+
+
+<!-- Register Popup -->
+<div class="popup" id="registerPopup">
+
+    <div class="popup-box">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Enter Name">
+
+        <input type="email" id="registerEmail" placeholder="Enter Email">
+
+        <input type="password" id="registerPassword" placeholder="Create Password">
+
+        <!-- Alert yahan add hai -->
+        <button class="popup-btn" onclick="registerAlert()">Register</button>
+
+    </div>
+
+</div>
+
+</div>
+
+</header>
+<section class="company-hero">
+
+    <div class="hero-left">
+        <h2>
+            Welcome back,<br>
+            <span>Company Name!</span>
+        </h2>
+
+        <p>
+            Manage your jobs, applications and <br>
+            find the best talent.
+        </p>
+    </div>
+
+    <div class="hero-right">
+        <img src="images/companies123.png" alt="Company Banner">
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="card">
+        <div class="icon purple">💼</div>
+
+        <div class="info">
+            <h3>18</h3>
+            <p>Active Jobs</p>
+            <a href="#">View Jobs →</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon green">👥</div>
+
+        <div class="info">
+            <h3>236</h3>
+            <p>Total Applications</p>
+            <a href="#">View Applications →</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon orange">👁</div>
+
+        <div class="info">
+            <h3>34</h3>
+            <p>Shortlisted</p>
+            <a href="#">View Shortlisted →</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon pink">👤</div>
+
+        <div class="info">
+            <h3>12</h3>
+            <p>Hired</p>
+            <a href="#">View Hires →</a>
+        </div>
+    </div>
+
+</section>
+<div class="dashboard">
+
+    <!-- Left Section -->
+    <div class="left-panel">
+
+        <div class="heading">
+            <h3>Recent Job Postings</h3>
+            <a href="#">View All Jobs →</a>
+        </div>
+
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-icon" style="background:#4c6fff;">💻</div>
+                <div>
+                    <div class="job-title">UI/UX Designer</div>
+                    <div class="job-category">Full Time • Design</div>
+                </div>
+            </div>
+
+            <div class="job-count">
+                <h4>32</h4>
+                <span>Applications</span>
+            </div>
+
+            <div class="status">Active</div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-icon" style="background:#6c63ff;"></div>
+                <div>
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-category">Full Time • Development</div>
+                </div>
+            </div>
+
+            <div class="job-count">
+                <h4>56</h4>
+                <span>Applications</span>
+            </div>
+
+            <div class="status">Active</div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-icon" style="background:#ff8b2d;">📢</div>
+                <div>
+                    <div class="job-title">Digital Marketing Executive</div>
+                    <div class="job-category">Full Time • Marketing</div>
+                </div>
+            </div>
+
+            <div class="job-count">
+                <h4>21</h4>
+                <span>Applications</span>
+            </div>
+
+            <div class="status">Active</div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-icon" style="background:#1abc9c;">🎧</div>
+                <div>
+                    <div class="job-title">Customer Support Executive</div>
+                    <div class="job-category">Full Time • Support</div>
+                </div>
+            </div>
+
+            <div class="job-count">
+                <h4>18</h4>
+                <span>Applications</span>
+            </div>
+
+            <div class="status">Active</div>
+        </div>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-panel">
+
+        <div class="action-card">
+
+            <h3>Quick Actions</h3>
+
+            <button class="action-btn">+ Post a New Job</button>
+
+            <ul class="action-list">
+                <li>View All Applications <span>›</span></li>
+                <li>Search Candidates <span>›</span></li>
+                <li>Manage Shortlist <span>›</span></li>
+            </ul>
+
+        </div>
+
+        <div class="bottom-card">
+            <img src="team.png" alt="Team">
+
+            <h4>Find the right talent faster</h4>
+
+            <p>
+                Connect with skilled professionals and grow your team.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+<section class="jcHireBanner">
+
+    <div class="jcHireLeft">
+
+        <div class="jcHireImage">
+            <img src="images/right companies.png" alt="Hire Team">
+        </div>
+
+        <div class="jcHireContent">
+            <h2>Hire the best talent.</h2>
+
+            <h3>Build your dream team with JobConnected.</h3>
+
+            <p>
+                Post jobs, review applications and hire the right
+                candidates faster and easier.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="jcHireButtons">
+
+        <a href="#" class="jcPostJob">
+            <i class="fa-solid fa-briefcase"></i>
+            Post a Job
+        </a>
+
+        <a href="#" class="jcBrowseCandidate">
+            <i class="fa-solid fa-users"></i>
+            Browse Candidates
+        </a>
+
+    </div>
+
+</section>
+<section class="jcFeatureSection">
+
+    <div class="jcFeatureBox">
+        <div class="jcFeatureIcon blue">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div class="jcFeatureText">
+            <h4>Access Top Talent</h4>
+            <p>Connect with skilled professionals across industries.</p>
+        </div>
+    </div>
+
+    <div class="jcFeatureBox">
+        <div class="jcFeatureIcon shield">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div class="jcFeatureText">
+            <h4>Trusted & Secure</h4>
+            <p>Secure platform to manage hiring and candidate information.</p>
+        </div>
+    </div>
+
+    <div class="jcFeatureBox">
+        <div class="jcFeatureIcon clock">
+            <i class="fa-regular fa-clock"></i>
+        </div>
+
+        <div class="jcFeatureText">
+            <h4>Save Time</h4>
+            <p>Streamline your hiring process and save valuable time.</p>
+        </div>
+    </div>
+
+    <div class="jcFeatureBox">
+        <div class="jcFeatureIcon chart">
+            <i class="fa-solid fa-chart-simple"></i>
+        </div>
+
+        <div class="jcFeatureText">
+            <h4>Better Results</h4>
+            <p>Find the right candidates faster and build high performing teams.</p>
+        </div>
+    </div>
+
+</section>
+<section class="jcCompanyFooter">
+
+    <div class="jcFooterCol jcFooterAbout">
+
+        <img src="images/companies portl.png" alt="JobConnected Logo" class="jcFooterLogo">
+
+        <p>
+            A smart hiring platform to help companies
+            find the right talent and build successful
+            teams.
+        </p>
+
+        <ul class="jcContactList">
+            <li><i class="fa-regular fa-envelope"></i> support@jobconnected.com</li>
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-location-dot"></i> New Delhi, India</li>
+        </ul>
+
+    </div>
+
+    <div class="jcFooterCol">
+        <h4>For Employers</h4>
+
+        <a href="#">Post a Job</a>
+        <a href="#">Manage Jobs</a>
+        <a href="#">Browse Candidates</a>
+        <a href="#">Applications</a>
+        <a href="#">Pricing Plans</a>
+
+    </div>
+
+    <div class="jcFooterCol">
+        <h4>Resources</h4>
+
+        <a href="#">Help Center</a>
+        <a href="#">Hiring Guide</a>
+        <a href="#">Recruitment Blog</a>
+        <a href="#">Success Stories</a>
+        <a href="#">Resources</a>
+
+    </div>
+
+    <div class="jcFooterCol">
+        <h4>Company</h4>
+
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+
+    </div>
+
+    <div class="jcFooterCol jcSubscribe">
+
+        <h4>Stay Updated</h4>
+
+        <p>
+            Subscribe to our newsletter and get the
+            latest updates and hiring tips.
+        </p>
+
+        <div class="jcSubscribeBox">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+</section>
+</body>
+<script>
+
+function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+}
+
+function openRegister() {
+    document.getElementById("registerPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("loginPopup").style.display = "none";
+    document.getElementById("registerPopup").style.display = "none";
+}
+
+
+// Login Alert
+function loginAlert() {
+
+    let email = document.getElementById("loginEmail").value;
+    let password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter Email and Password!");
+    } 
+    else {
+        alert("Login Successfully!");
+        closePopup();
+    }
+}
+
+
+// Register Alert
+function registerAlert() {
+
+    let name = document.getElementById("registerName").value;
+    let email = document.getElementById("registerEmail").value;
+    let password = document.getElementById("registerPassword").value;
+
+    if (name === "" || email === "" || password === "") {
+        alert("Please fill all the fields!");
+    } 
+    else {
+        alert("Registration Successfully!");
+        closePopup();
+    }
+}
+
+</script>
+</html>
